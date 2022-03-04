@@ -22,7 +22,7 @@ int solve(tree * head){
     return 1+ max(solve(head->left),solve(head->right));
 }
 int main (){
-    tree head(2);
+    tree * head(2);
     cout<<solve(head);
     return 0;
 }
